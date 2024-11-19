@@ -1,4 +1,4 @@
-package com.MediaHub.MediaHub;
+package com.MediaHub.MediaHub.Media;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,12 +15,12 @@ public class MediaController {
     private MediaService mediaService;
 
     @GetMapping
-    public List<com.MediaHub.MediaHub.Media> getAllMedia() {
+    public List<Media> getAllMedia() {
         return mediaService.getAllMedia();
     }
 
     @GetMapping("/{id}")
-    public com.MediaHub.MediaHub.Media getMediaById(@PathVariable Long id) {
+    public Media getMediaById(@PathVariable Long id) {
         return mediaService.getMediaById(id);
     }
 

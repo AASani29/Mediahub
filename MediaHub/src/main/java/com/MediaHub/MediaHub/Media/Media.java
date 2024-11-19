@@ -1,4 +1,4 @@
-package com.MediaHub.MediaHub;
+package com.MediaHub.MediaHub.Media;
 
 import jakarta.persistence.*;
 import lombok.*;
